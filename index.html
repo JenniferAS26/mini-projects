@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="neumorphic-btn">
+            <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
+            <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter--v1.png"/></a>
+            <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></i></a>
+        </section>
+
+        <section class="neon-btn">
+            <i class="ri-instagram-line icon"></i>
+            <i class="ri-facebook-circle-line icon"></i>
+            <i class="ri-whatsapp-line icon"></i>
+        </section>
+
+        <section class="loader">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </section>
+
+        <section class="burger-menu">
+            <button type="button" class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </section>
+    </main>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger');
+        const menuIsActive = () => {
+            hamburgerMenu.classList.toggle('active');
+        };
+        hamburgerMenu.addEventListener('click', menuIsActive);
+    </script>
+</body>
+</html>
