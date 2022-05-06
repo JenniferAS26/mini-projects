@@ -10,39 +10,43 @@
 </head>
 <body>
     <main class="container">
-        <section class="neumorphic-btn">
+        <section class="section-size neumorphic-btn">
             <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
             <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter--v1.png"/></a>
             <a href="" class="icon"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></i></a>
         </section>
 
-        <section class="neon-btn">
+        <section class="section-size neon-btn">
             <i class="ri-instagram-line icon"></i>
             <i class="ri-facebook-circle-line icon"></i>
             <i class="ri-whatsapp-line icon"></i>
         </section>
 
-        <section class="loader">
+        <section class="section-size loader">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </section>
 
-        <section class="burger-menu">
+        <section class="section-size burger-menu">
             <button type="button" class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
         </section>
+
+        <section class="section-size toggle-btn">
+            <label for="checkbox" class="toggler">
+                <input type="checkbox" id="checkbox">
+                <span class="ball"></span>
+                <img class="sun" src="https://img.icons8.com/material-outlined/24/ffffff/sun--v1.png"/>
+                <img class="moon" src="https://img.icons8.com/material/24/ffffff/moon-symbol.png"/>
+            
+            </label>
+        </section>
     </main>
 
-    <script>
-        const hamburgerMenu = document.querySelector('.hamburger');
-        const menuIsActive = () => {
-            hamburgerMenu.classList.toggle('active');
-        };
-        hamburgerMenu.addEventListener('click', menuIsActive);
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>

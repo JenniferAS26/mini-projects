@@ -9,16 +9,19 @@
     flex-wrap: wrap;
 }
 
-.neumorphic-btn {
-    font-size: 25px;
+.section-size {
     width: 250px;
     height: 100px;
-    background-color: #56C7F7;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 01rem 1.5rem;
+}
+
+.neumorphic-btn {
+    font-size: 25px;
+    background-color: #56C7F7;
 }
 
 .neumorphic-btn .icon {
@@ -51,14 +54,7 @@
 
 .neon-btn {
     font-size: 30px;
-    width: 250px;
-    height: 100px;
     background-color: #161516;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 01rem 1.5rem;
 }
 
 .neon-btn .icon {
@@ -114,14 +110,8 @@
 }
 
 .loader {
-    width: 250px;
-    height: 100px;
     background-color: #161516;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 01rem 1.5rem;
 }
 
 .bar {
@@ -154,13 +144,7 @@
 }
 
 .burger-menu {
-    width: 250px;
-    height: 100px;
     background-color: #2CA25A;
-    border-radius: 20px;
-    margin: 01rem 1.5rem;
-    display: flex;
-    align-content: center;
     justify-content: center;
 }
 
@@ -190,3 +174,53 @@
 .hamburger.active .line:nth-child(3) {
     transform: translateY(-13px) rotate(-45deg);
 }
+
+.toggle-btn {
+    background-color: #575757;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    display: block;
+    width: 80px;
+    height: 37px;
+    border: 2px solid #4672fe;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.ball, .sun, .moon {
+    position: absolute;
+    top: 50%; /* revisar esta parte */
+    transform: translateY(-50%);
+}
+
+.ball {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #4672fe;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.sun {
+    left: 5px;
+    
+}
+
+.moon {
+    right: 5px;
+}
+
+#checkbox:checked + .ball {
+    transform: translate(43px, -50%);
+}
+
